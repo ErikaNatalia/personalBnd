@@ -1,0 +1,174 @@
+/* titleFont font-family: 'Jockey One', sans-serif; */
+/* paragraphsFont font-family: 'Aldrich', sans-serif; */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* margin to all */
+.paddingAll{
+     padding: 0 6% 0 6%;
+}
+/* titlesAll */
+.titlesAll{
+    font-size: 9rem;
+    color: #01448F;
+    -webkit-text-stroke: 0.2rem #B88315;
+    font-family: 'Jockey One', sans-serif;
+}
+/* buttonsAll */
+.buttonsAll{
+    height: 50px;
+    width: 200px;
+    cursor: pointer;
+    clip-path: polygon(8% 0, 91% 0, 100% 20%, 100% 80%, 91% 100%, 8% 100%, 0% 80%, 0% 20%);
+    /* clip-path: polygon(100% 0, 100% 50%, 100% 100%, 0% 100%, 0 49%, 0% 0%); RECTANGULO*/
+    border: 0.4vh solid #70E000;
+    padding-top: 1.5vh;
+    text-align: center;
+    color: #01448F;
+    font-size: 1.7rem;
+    /* transition: all 0.1s ease; */
+    }
+
+    .buttonsAll:hover{
+    color: #B88315;
+    /* clip-path:  polygon(88% 0, 100% 50%, 87% 100%, 0% 100%, 11% 50%, 0% 0%); arrowR*/
+    }
+/* spaceBox to all*/
+.backSpace{
+    padding: 3vh 0 3vh 0;
+    background-color: #FFFCF1;               /* After!!! you should changue de color, don´t forget */
+}
+/* spaceBox to all Right*/
+.spaceBox-R{
+    width: 100%;
+    height: 15vh;
+    clip-path: polygon(0 0, 0% 100%, 100% 50%);
+    background-color: #B88315;
+    float: left;
+}
+/* spaceBox to all Left*/
+.spaceBox-F{
+    width: 100%;
+    height: 15vh;
+    clip-path: polygon(100% 0, 100% 100%, 0 50%);
+    background-color: #B88315;
+    float: left;
+}
+
+
+/* navBar */
+nav{
+    width: 100%;
+    height: 10.5vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    border-bottom: 0.4vh solid #B88315;
+    background-color: #FFFCF1;
+}
+.list{
+    height: 10.5vh;
+    list-style: none;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    
+}
+#liNav{
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: #B88315;
+    font-family: 'Jockey One', sans-serif;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+#liNav:hover{
+    color: #01448F;
+}
+
+#logo{
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* introductionSection */
+#introduction{ 
+    display: grid;
+    grid-template-rows: 30vh 30vh 55vh;
+    row-gap: 7vh;
+    padding-top: 3vh;
+    /* justify-items: left; */
+    font-size: 3rem;
+    color: #01448F;
+    font-family: 'Jockey One', sans-serif;
+    background-color: #FFFCF1;        /* After!!! you should changue de color, don´t forget */
+}
+#introSub{
+    font-size: 3.7rem;
+}
+#phraseR{
+    text-align: right;
+}
+#introPaph{
+    height: 10vh;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    font-family: 'Aldrich', sans-serif;
+}
+#introBtn{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding-left: 20%;
+    clip-path: polygon(8% 0, 91% 0, 100% 20%, 100% 80%, 91% 100%, 8% 100%, 0% 80%, 0% 20%);
+}
+#articlePaph{
+    border-right: 0.4vh solid #B88315;
+}
+#introIcon{
+    padding-top: 5vh;
+}
+
+/* abutSection */
+
+#aboutMe{
+    width: 100%;
+    background-color: #FFFCF1;
+    padding-right: 6%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+#aboutImg{
+    opacity: 0.9;
+}
+#aboutTitle{
+    text-align: right;
+}
+#aboutTxt{
+    text-align: center;
+    padding-left: 2vh;
+    font-size: 1.5rem;
+    color: #01448F;
+    font-family: 'Aldrich', sans-serif;
+}
+#aboutPaph{
+    text-align: center;
+}
+
+/* skillSection */
+#skills{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+#skillsTitle{
+    text-align: center;
+}
+#skillsBtn{
+    font-family: 'Aldrich', sans-serif;
+}
