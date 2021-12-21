@@ -292,22 +292,60 @@ nav{
 
 /* servicesSection */
 #services{
-    background-color: red;
-    /* background-color: #FFFCF1; */
+    background-color: #FFFCF1;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 0.5fr 1fr;
+    column-gap: 300px;
     align-items: center;
     justify-content: center;
 }
-.nameService{
-    display: grid;
-    height: 25vh;
-    color: #01448F;
-    font-size: 1.5rem;
-    font-family: 'Jockey One', sans-serif;
-    align-items: center;
+#service{
+    display: flex;
+    column-gap: 40px;
+}
+#serviceTit{
+    display: flex;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
+}
+.nameService{
+    width: 50%;
+    height: 25vh;
+    display: flex;
+    color: #01448F;
+    text-align: center;
+    cursor: pointer;
+    font-size: 2em;
+    font-family: 'Aldrich', sans-serif;
+    justify-content: center;
+    align-items: center;
     border: 0.4vh solid #B88315;
     border-radius: 10px;
+}
+.nameService:hover{
+    color: #B88315;
+}
 
+/* contacSection */
+#contact{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+label{
+    font-size: 1em;
+    font-family: 'Aldrich', sans-serif;
+}
+input{ 
+    width: 90%;
+    height: 7vh;
+    border-radius: 10px;
+    border: 0.4vh solid #B88315;
+}
+#inputMss{
+    height: 20vh;
+}
+#contactTit{
+    text-align: right;
 }
