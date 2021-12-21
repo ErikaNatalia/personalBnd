@@ -18,14 +18,16 @@
 }
 /* buttonsAll */
 .buttonsAll{
+    display: flex;
     height: 50px;
     width: 200px;
     cursor: pointer;
     clip-path: polygon(8% 0, 91% 0, 100% 20%, 100% 80%, 91% 100%, 8% 100%, 0% 80%, 0% 20%);
     /* clip-path: polygon(100% 0, 100% 50%, 100% 100%, 0% 100%, 0 49%, 0% 0%); RECTANGULO*/
     border: 0.4vh solid #70E000;
-    padding-top: 1.5vh;
-    text-align: center;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Jockey One', sans-serif;
     color: #01448F;
     font-size: 1.7rem;
     /* transition: all 0.1s ease; */
@@ -37,6 +39,7 @@
     }
 /* spaceBox to all*/
 .backSpace{
+    height: 21vh;
     padding: 3vh 0 3vh 0;
     background-color: #FFFCF1;               /* After!!! you should changue de color, don´t forget */
 }
@@ -116,7 +119,7 @@ nav{
 #introPaph{
     height: 10vh;
     display: grid;
-    grid-template-columns: 2fr 1fr;
+    grid-template-columns: 3fr 1fr;
     font-family: 'Aldrich', sans-serif;
 }
 #introBtn{
@@ -125,10 +128,10 @@ nav{
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    padding-left: 20%;
     clip-path: polygon(8% 0, 91% 0, 100% 20%, 100% 80%, 91% 100%, 8% 100%, 0% 80%, 0% 20%);
 }
 #articlePaph{
+    padding-right: 1%;
     border-right: 0.4vh solid #B88315;
 }
 #introIcon{
@@ -163,12 +166,148 @@ nav{
 
 /* skillSection */
 #skills{
+    background-color: #FFFCF1;
     display: grid;
     grid-template-columns: 1fr 1fr;
-}
-#skillsTitle{
-    text-align: center;
+    align-items: center;
+    justify-content: center;
 }
 #skillsBtn{
+    display: flex;
+    flex-direction: column;
     font-family: 'Aldrich', sans-serif;
+}
+.nameSkill{
+    display: grid;
+    height: 7vh;
+    color: #01448F;
+    font-size: 1.5rem;
+    font-family: 'Jockey One', sans-serif;
+    align-items: center;
+    justify-content: center;
+    border: 0.4vh solid #B88315;
+    border-radius: 10px;
+
+}
+.skillLi{
+    color: #01448F;
+    display: grid;
+    text-align: left;
+    margin: 5vh;
+    float: left;
+}
+
+/* portfolioSection */
+#portfolio{
+    background-color: #FFFCF1;
+    display: grid;
+    grid-template-rows: 25vh 50vh 25vh;
+}
+#portfolioTit{
+    text-align: right;
+}
+
+/* sliderSection */
+.containerSlider{
+    width: 100%;
+    margin: auto;
+    overflow: hidden;
+    position: relative;
+}
+
+.slider{
+    display: flex;
+    width: 400%;              
+    height: 300px;
+    margin-left: -100%;
+}
+
+.slider-Section{
+    width: 100%;
+}
+
+#sliderBox{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    column-gap: 25px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+#sliderMinBox{
+    width: 25%;
+    height: 30vh;
+    text-align: center;
+    color: #01448F;;
+    cursor: pointer;
+    font-size: 1.5em;
+    font-family: 'Jockey one', sans-serif;
+    border: 0.4vh solid #B88315;
+    border-radius: 10px;
+}
+.sliderImg{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    display: block;
+    object-fit: cover;
+}
+.sliderBtn{
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #01448F;
+    font-size: 3em;
+    font-family: 'Alfrich', sans-serif;
+    text-align: center;
+    cursor: pointer;
+}
+.sliderBtn:hover{
+    color: #B88315;
+}
+.sliderR{
+    right: 10px;
+}
+.sliderL{
+    left: 10px;
+}
+
+/* interestedBnt */
+#interestedBtn{
+    height: 15vh;
+    display: grid;
+    text-align: center;
+    grid-template-columns: 2.5fr 1fr;
+    align-items: center;
+    justify-content: center;
+    color: #01448F;
+    font-size: 2em;
+    font-family: 'Aldrich', sans-serif;;
+    border-radius: 10px;
+    border: 0.4vh solid #01448F;
+}
+
+/* servicesSection */
+#services{
+    background-color: red;
+    /* background-color: #FFFCF1; */
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-content: center;
+}
+.nameService{
+    display: grid;
+    height: 25vh;
+    color: #01448F;
+    font-size: 1.5rem;
+    font-family: 'Jockey One', sans-serif;
+    align-items: center;
+    justify-content: center;
+    border: 0.4vh solid #B88315;
+    border-radius: 10px;
+
 }

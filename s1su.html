@@ -13,24 +13,26 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Aldrich&family=Jockey+One&display=swap" rel="stylesheet">
     <!-- cssContec -->
-    <link rel="stylesheet" href="portfolio.css">
+    <link rel="stylesheet" href="s1su.css">
     <title>ERIKA NATALIA | S1SU</title>
 </head>
 <body>
     <!-- navBar -->
-    <nav>
-        <ul class="list">
-            <li id="liNav">ABOUT</li>
-            <li id="liNav">SERVICES</li>
-        </ul>
-        <div id="logo">
-            <img src="img/logoCentro.svg" width="100%" height="100%" alt="S1SU">
-        </div>
-        <ul class="list">
-            <li id="liNav">PORTFOLIO</li>
-            <li id="liNav">CONTACT</li>
-        </ul>
-    </nav>
+    <header>
+        <nav>
+            <ul class="list">
+                <li id="liNav">ABOUT</li>
+                <li id="liNav">SERVICES</li>
+            </ul>
+            <div id="logo">
+                <img src="image/logoCentro.svg" width="100%" height="100%" alt="S1SU">
+            </div>
+            <ul class="list">
+                <li id="liNav">PORTFOLIO</li>
+                <li id="liNav">CONTACT</li>
+            </ul>
+        </nav>
+    </header>
 
     <!-- introductionSection -->
     <section class="paddingAll" id="introduction">
@@ -62,7 +64,7 @@
     <!-- aboutSection -->
     <section id="aboutMe">
         <div id="aboutImg">
-            <img src="img/rhinoL.svg" width="100%" height="100%" alt="S1SU">
+            <img src="image/rhinoL.svg" width="100%" height="100%" alt="S1SU">
         </div>
         <div>
             <div class="titlesAll" id="aboutTitle">ABOUT <BR/> ME</div>
@@ -92,18 +94,78 @@
     <section class="paddingAll" id="skills">
         <div class="titlesAll" id="skillsTitle">MY  <br/> SKILLS</div>
         <div id="skillsBtn">
-            <ul>
+            <div class="nameSkill">Frontend</div>
+            <ul class="skillLi">
                 <li>HTML</li>
                 <li>CSS</li>
                 <li>JAVA SCRIPT</li>
             </ul>
 
-            <ul>
+            <div class="nameSkill">Backend</div>
+            <ul class="skillLi">
                 <li>HTML</li>
                 <li>CSS</li>
                 <li>JAVA SCRIPT</li>
             </ul>
         </div>
     </section>
+
+     <!-- spaceBox Right -->
+     <div class="backSpace">
+        <div class="spaceBox-R"></div>
+    </div>
+
+    <!-- portfolioSection -->
+    <section class="paddingAll" id="portfolio">
+        <div class="titlesAll" id="portfolioTit">PORTFOLIO</div>
+
+        <!-- sliderSection -->
+        <section class="containerSlider">
+            <div class="slider" id="slider">
+                <div id="sliderBox" class="slider-Section">
+                    <div id="sliderMinBox"><img src="image/IMG_8231.jpg" alt="" class="sliderImg"> Ahorcado Game</div>
+                    <div id="sliderMinBox"><img src="image/IMG_8231.jpg" alt="" class="sliderImg"> Tetris Game</div>
+                    <div id="sliderMinBox"><img src="image/IMG_8231.jpg" alt="" class="sliderImg"> foto1</div>
+                </div>
+                <div id="sliderBox" class="slider-Section">
+                    <div id="sliderMinBox">hola1</div>
+                    <div id="sliderMinBox">hola2</div>
+                    <div id="sliderMinBox"><img src="image/IMG_8231.jpg" alt="" class="sliderImg"> foto2</div>
+                </div>
+                <div id="sliderBox" class="slider-Section">
+                    <div id="sliderMinBox">hola1</div>
+                    <div id="sliderMinBox">hola2</div>
+                    <div id="sliderMinBox"><img src="image/IMG_8231.jpg" alt="" class="sliderImg"> foto3</div>
+                </div>
+                <div id="sliderBox" class="slider-Section">
+                    <div id="sliderMinBox">hola1</div>
+                    <div id="sliderMinBox">hola2</div>
+                    <div id="sliderMinBox"><img src="image/IMG_8231.jpg" alt="" class="sliderImg"> foto4</div>
+                </div>
+            </div>
+            <div class="sliderBtn sliderR" id="btnR">&#62;</div>
+            <div class="sliderBtn sliderL" id="btnL">&#60;</div>
+        </section>
+        <div id="interestedBtn">
+            Are you interested in working together?
+            <div class="buttonsAll">Let's do this</div>
+        </div>
+    </section>
+
+    <!-- spaceBox Left -->
+    <div class="backSpace">
+        <div class="spaceBox-F"></div>
+    </div>
+
+    <!-- servicesSection -->
+    <section class="paddingAll" id="services">
+        <div class="titlesAll">WHAT I <br/> OFFER?</div>
+        <div id="service">
+            <div class="nameService">Frontend</div>
+            <div class="nameService">Backend</div>
+        </div>
+    </section>
+
+    <script src="s1su.js"></script>
 </body>
 </html>
